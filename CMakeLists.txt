@@ -20,8 +20,13 @@ add_executable(wol-qt
   src/wol.h
 )
 
+add_executable(cli_wol
+               src/cli.main.c
+               )
+
 target_include_directories(wol-qt
                            PRIVATE
                            ui)
 
 target_link_libraries(wol-qt Qt5::Widgets linet)
+target_link_libraries(cli_wol linet)
