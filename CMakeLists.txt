@@ -30,3 +30,9 @@ target_include_directories(wol-qt
 
 target_link_libraries(wol-qt Qt5::Widgets linet)
 target_link_libraries(cli_wol linet)
+
+
+install(TARGETS cli_wol
+        RUNTIME DESTINATION /usr/bin)
+install(TARGETS wol-qt
+        RUNTIME DESTINATION /usr/bin)
