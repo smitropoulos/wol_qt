@@ -27,7 +27,7 @@ void MainWindow::on_pushButton_clicked()
 
 int MainWindow::handleWol() {
     auto inputText = ui->lineEdit->text();
-    if (inputText.trimmed().size() != 12)
+    if (inputText.trimmed().size() != 17)
     {
         ui->label->setText("Wrong size. Paste your MAC address including colons. (expected 12 characters)");
         return -1;
