@@ -16,7 +16,6 @@ add_executable(wol-qt
   src/mainwindow.h
   src/mainwindow.ui
   src/wol.cpp
-  src/WOL_Gui.pro
   src/wol.h
 )
 
