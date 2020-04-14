@@ -17,6 +17,7 @@ add_executable(wol-qt
   src/mainwindow.ui
   src/wol.cpp
   src/wol.h
+  src/history.cpp
 )
 
 add_executable(wol

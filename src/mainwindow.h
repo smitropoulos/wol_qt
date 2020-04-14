@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "history.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -11,14 +12,15 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+protected:
+    History historyHandler;
+    QStringList strList;
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     int handleWol();
 private slots:
-    void on_lineEdit_returnPressed();
-
     void on_pushButton_clicked();
 
 private:

@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <inet_spec_packet.h>
+#include <inet_oper.h>
 
 
 #define MAGIC_PACKET_LENGTH 102

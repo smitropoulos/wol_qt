@@ -34,19 +34,15 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QLineEdit" name="lineEdit">
-         <property name="toolTip">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Insert a MAC address including colons&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
        <item row="2" column="0">
         <widget class="QPushButton" name="pushButton">
          <property name="text">
           <string>Send WOL packet</string>
          </property>
         </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="comboBox"/>
        </item>
       </layout>
      </widget>
