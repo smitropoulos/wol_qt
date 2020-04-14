@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1.0)
 
 project(wol-qt)
 
-#add_subdirectory(linet-master)
+add_subdirectory(linet-master)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)

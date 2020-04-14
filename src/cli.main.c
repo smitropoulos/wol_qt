@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
 #define MAGIC_PACKET_LENGTH 102
 
 int main(int argc, char **argv) {
