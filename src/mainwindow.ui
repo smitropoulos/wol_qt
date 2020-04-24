@@ -243,12 +243,12 @@
   <customwidget>
    <class>customArpTable</class>
    <extends>QTableWidget</extends>
-   <header>customarptable.h</header>
+   <header>customArpTable.h</header>
   </customwidget>
   <customwidget>
    <class>TextAlteringButton</class>
    <extends>QPushButton</extends>
-   <header location="global">textalteringbutton.h</header>
+   <header location="global">TextAlteringButton.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
