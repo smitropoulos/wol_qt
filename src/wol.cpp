@@ -5,10 +5,9 @@
 #include "wol.h"
 
 
-int send(char* mac){
+int sendWolPacket(char *mac) {
 
-unsigned char packet[MAGIC_PACKET_LENGTH];
-createMagicPacket(packet, mac);
-return sendWOLPacket(packet);
-
+    unsigned char packet[MAGIC_PACKET_LENGTH];
+    createMagicPacket(packet, mac);
+    return sendWOLPacket(packet);
 }

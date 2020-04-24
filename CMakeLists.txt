@@ -11,14 +11,17 @@ set(CMAKE_AUTOUIC ON)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(wol-qt
-  src/main.cpp
-  src/mainwindow.cpp
-  src/mainwindow.h
-  src/mainwindow.ui
-  src/wol.cpp
-  src/wol.h
-  src/history.cpp
-)
+               src/main.cpp
+               src/mainwindow.cpp
+               src/mainwindow.h
+               src/mainwindow.ui
+               src/wol.cpp
+               src/wol.h
+               src/history.cpp
+               src/ArpWorker.cpp
+               src/customArpTable.cpp
+               src/TextAlteringButton.cpp
+               )
 
 add_executable(wol
                src/cli.main.c
@@ -26,11 +29,10 @@ add_executable(wol
 
 target_include_directories(wol-qt
                            PRIVATE
-                           ui)
+                           ui src)
 
-target_link_libraries(wol-qt Qt5::Widgets linet)
+target_link_libraries(wol-qt Qt5::Widgets linet pthread)
 target_link_libraries(wol linet)
-
 
 install(TARGETS wol
         RUNTIME DESTINATION /usr/bin)

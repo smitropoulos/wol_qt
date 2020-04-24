@@ -12,7 +12,6 @@ int History::load() {
     {
         while ( getline(file, line))
         {
-            std::cout << line << '\n';
             m_stringList << QString::fromStdString(line);
         }
         file.close();
