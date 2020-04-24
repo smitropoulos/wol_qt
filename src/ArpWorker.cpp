@@ -16,7 +16,7 @@ int ArpWorker::scan(bool startOver) {
         emptyElementTable();
     }
 
-    const char *cmd = R"(sudo arp |awk '{if(NR>1)print}' | awk -F " " '{print $1 "~" $3"~"$NF}' | tr '\n' ';')";
+    const char *cmd = R"(arp |awk '{if(NR>1)print}' | awk -F " " '{print $1 "~" $3"~"$NF}' | tr '\n' ';')";
     std::array<char, 64> buffer{};
     std::string result;
     std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
