@@ -48,7 +48,7 @@
           </sizepolicy>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="tab_9">
           <attribute name="title">
@@ -243,12 +243,12 @@
   <customwidget>
    <class>customArpTable</class>
    <extends>QTableWidget</extends>
-   <header>customArpTable.h</header>
+   <header>customarptable.h</header>
   </customwidget>
   <customwidget>
    <class>TextAlteringButton</class>
    <extends>QPushButton</extends>
-   <header>TextAlteringButton.h</header>
+   <header location="global">textalteringbutton.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
