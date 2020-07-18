@@ -143,4 +143,8 @@ compile_commands.json
 
 .idea/
 
+Testing/
+
 linet/
+src/testing_main.cpp
+
