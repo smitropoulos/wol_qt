@@ -10,6 +10,8 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
+add_subdirectory(tests)
+
 add_executable(wol-qt
                src/main.cpp
                src/mainwindow.cpp
