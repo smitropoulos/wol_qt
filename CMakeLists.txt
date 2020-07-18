@@ -8,6 +8,8 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+enable_testing()
+
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(wol-qt
