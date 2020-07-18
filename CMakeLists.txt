@@ -10,8 +10,6 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_subdirectory(tests)
-
 add_executable(wol-qt
                src/main.cpp
                src/mainwindow.cpp
@@ -35,6 +33,8 @@ target_include_directories(wol-qt
 
 target_link_libraries(wol-qt Qt5::Widgets linet pthread)
 target_link_libraries(wol linet)
+
+add_subdirectory(tests)
 
 install(TARGETS wol
         RUNTIME DESTINATION /usr/bin)
